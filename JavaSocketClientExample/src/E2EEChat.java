@@ -12,7 +12,7 @@ public class E2EEChat
     }
 
     // 접속 정보, 필요시 수정
-    private final String hostname = "168.188.127.155";
+    private final String hostname = "homework.islab.work";
     private final int port = 8080;
 
     public E2EEChat() throws IOException {
