@@ -33,7 +33,7 @@ public class E2EEChat
                byte[] recvBytes = new byte[2048];
                int recvSize = stream.read(recvBytes);
 
-               String recv = new String(recvBytes, 0, recvSize, StandardCharsets.UTF_8);
+               String recv = new String(recvBytes, 0, recvSize - 1, StandardCharsets.UTF_8);
 
                parseReceiveData(recv);
            } catch (IOException ex) {
